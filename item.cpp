@@ -19,3 +19,6 @@ using namespace std;
         {
             cout << "ID: " << _id << " | Item: " << _name << endl;
         };
+        item exportItem() {
+            
+        }
