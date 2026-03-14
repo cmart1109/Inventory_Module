@@ -14,7 +14,7 @@ int main() {
     int choice = 0;
     vector<item> items = loadItems();
 
-    while (choice != 3) {
+    while (choice != 4) {
         cout << "-----------------------------\n";
         cout << "Please select what you want to do:\n";
         cout << "1. Add Item\n";
