@@ -5,6 +5,7 @@
 #include <iostream>
 #include <random>
 #include <cstdlib>
+#include <iomanip>
 using namespace std;
 
         item::item() {};
@@ -32,7 +33,13 @@ using namespace std;
         // This function will show the item information, it will print the item information to the console.
         void item::showInfo()
         {
-            cout << "ID: " << _id << " | Item: " << _name << " | Category: " << _category << " | Price: $" << _price << " | Refundable: " << (_refundable ? "Yes" : "No") << endl;
+            cout << left
+                 << setw(5) << _id
+                 << setw(15) << _name
+                 << setw(15) << _category   
+                 << setw(10) << fixed << setprecision(2) << _price
+                 << setw(10) << (_refundable ? "Yes" : "No") 
+                 << endl;
         }
 
         // This function will return the id of the item, it will return the _id property of the item.

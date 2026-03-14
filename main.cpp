@@ -19,12 +19,12 @@ int main() {
         cout << "Please select what you want to do:\n";
         cout << "1. Add Item\n";
         cout << "2. Show All Items\n";
-        cout << "3. Exit\n";
-        cout << "4. Delete Item\n";
+        cout << "3. Delete Item\n";
+        cout << "4. Exit\n";
         cout << "-----------------------------\n";
         cin >> choice;
         
-        if (choice == 3) 
+        if (choice == 4) 
         {
             cout << "Exiting...\n";
             break;
@@ -41,7 +41,7 @@ int main() {
             showAllItems(items);
         }
 
-        else if (choice == 4)
+        else if (choice == 3)
         {
             int id;
             cout << "Enter the ID of the item you want to delete: \n";

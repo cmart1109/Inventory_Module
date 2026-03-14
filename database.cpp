@@ -3,6 +3,7 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
     // This function will load the items from the csv file and return a vector of items.
@@ -66,11 +67,21 @@ using namespace std;
     // this function will show all the items in the inventory, it will loop through the vector of items and call the showInfo function for each item.
     void showAllItems(vector<item> &items)
     {
+        cout << left
+             << setw(5)  << "ID"
+             << setw(15) << "Name"
+             << setw(15) << "Category"
+             << setw(10) << "Price"
+             << setw(10) << "Refund"
+             << endl;
+
+        cout << "------------------------------------------------------" << endl;
+
         for (auto &i : items)
         {
             i.showInfo();
         }
-    };
+    }
 
     // This function will delete an item from the inventory, it will ask the user for the item id and delete the item from the vector of items.
     void deleteItem(vector<item> &items, int id)
