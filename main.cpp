@@ -1,11 +1,17 @@
 #include "item.h"
 #include <iostream>
 #include <ctime>
+#include <vector>
+
+vector<item> loadItems();
+void saveItems(vector<item> &items);
+void addItem(vector<item> &items);
+
 using namespace std;
 
 int main() {
-    srand(time(0));
-    item itemTest("Milk", "Weapons", 19.99);
-    itemTest.showInfo();
+    vector<item> items = loadItems();
+    addItem(items);
+    saveItems(items);
     return 0;
 }
