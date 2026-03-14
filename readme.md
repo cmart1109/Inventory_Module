@@ -8,7 +8,7 @@ The purpose of this project was to practice fundamental C++ concepts such as cla
 
 Through building this software, I also gained hands-on experience organizing a small C++ project into multiple files using header files (`.h`) and implementation files (`.cpp`), which is a common practice in professional C++ development.
 
-[Software Demo Video]()
+[Software Demo Video](https://youtu.be/i_wsihPu-EI)
 
 # Development Environment
 
